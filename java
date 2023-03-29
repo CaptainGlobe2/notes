@@ -92,6 +92,7 @@ DO-WHILE-do{body of loop}while(condition)
 FOR-for(initialization;condition;iteration){body of loop}
 
 ----------------11/03/23------------------------------
+
 Java is an object-oriented programming language. The core concept of the object-oriented approach is to break complex problems into smaller objects.
 
 ARRAYS-it is a collection of an object of same datatype we can store multiple data in the same varibale it is fixed memory it is stored as a index based syntax int a[]={1,2,3}; it is stored based on the index and it give best perfromance
@@ -257,7 +258,32 @@ NOTE:always end index -1
 ------------------------17/03/23-----------------------------
 DATABASE-DDL DML DTL
 DDL-data definition language, first we are going to create the db and inside the db we can create n numbre of table --data redundency is the problem we can store the data in one table
-SQL--use classicmodel; select * from customer;  select customerName,city,creditLimit from customer;    select customerName,city,creditLimit from customer where city='san francisco' and creditLimits>650000;   select customerName,city,creditLimit from customer where city in('singapore','san francisco)    select customerName,city,creditLimit from customer where city not in('singapore','san francisco)    select customerName,city,creditLimit from customer where creditLimit between 60000 and 100000;//above 60000 and below 100000        select customerName,city,creditLimit from customer where city like 's%';//the city start from the s we getting all the cities %means one or more character after s      select customerName,city,creditLimit from customer where city like 's_______';// underscore means exactly the underscore after that word    select customerName,city,creditLimit from customer limit 3;// if i need only 3 customer we give limit as a query after the query give the limit         select customerName,city,creditLimit from customer order by customerName;//it give the customerName as ascending order      select customerName,city,creditLimit from customer order by customerName desc//it give the name as descnding order      select customerName,city,creditLimit from customer order by creditLimit desc;//it give the highest creditLimit      select customerName,city,creditLimit from customer order by creditLimit desc limit 3;//we getting the highest creditLimit of the 3  customer select customerName,city,creditLimit from customer order by creditLimit desc limit 3,2;-->it print the value after 3 to 2value of the table ie.after coming 3 and it print next two value      select customerName,city,creditLimit from customer group by city        if we want to retrive the row with the with query with sub query first the inner query is executed and the outer query is start extecuted select *from offices; select fN,email,officeCode,jobTitle from employees where officeCode in (select officeCode from where officeCode in (4,5))       select *from payment; select *from customer //we can join the two table by using the join query aggrigate function sum,avrage,max,min.
+SQL--use classicmodel;
+        select * from customer; 
+        select customerName,city,creditLimit from customer;    
+        select customerName,city,creditLimit from customer where city='san francisco' and creditLimits>650000;   
+        select customerName,city,creditLimit from customer where city in('singapore','san francisco)   
+        select customerName,city,creditLimit from customer where city not in('singapore','san francisco)    
+        select customerName,city,creditLimit from customer where creditLimit between 60000 and 100000;//above 60000 and below 100000       
+        select customerName,city,creditLimit from customer where city like 's%';
+                //the city start from the s we getting all the cities %means one or more character after s     
+        select customerName,city,creditLimit from customer where city like 's_______';
+                // underscore means exactly the underscore after that word    
+        select customerName,city,creditLimit from customer limit 3;
+                // if i need only 3 customer we give limit as a query after the query give the limit         
+         select customerName,city,creditLimit from customer order by customerName;
+                //it give the customerName as ascending order      
+         select customerName,city,creditLimit from customer order by customerName desc
+                //it give the name as descnding order      
+         select customerName,city,creditLimit from customer order by creditLimit desc;
+                //it give the highest creditLimit      
+         select customerName,city,creditLimit from customer order by creditLimit desc limit 3;
+                //we getting the highest creditLimit of the 3  
+         customer select customerName,city,creditLimit from customer order by creditLimit desc limit 3,2;-->it print the value after 3 to 2value of the table ie.after coming 3 and it print next two value      
+         select customerName,city,creditLimit from customer group by city        if we want to retrive the row with the with query with sub query first the inner query is executed and the outer query is start extecuted 
+         select *from offices; select fN,email,officeCode,jobTitle from employees where officeCode in (select officeCode from where officeCode in (4,5))       
+         select *from payment; select *from customer 
+                //we can join the two table by using the join query aggrigate function sum,avrage,max,min.
 -------------------------------------20/03/23-------------------------
 SQL-->
 
