@@ -596,3 +596,5 @@ challenges in cloud enable restfull webserivce
 
 advantage new technology
 
+The latest version of Java is Java 20 or JDK 20, which was released on March, 2023
+
